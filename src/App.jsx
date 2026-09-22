@@ -102,8 +102,8 @@ function Shell() {
           >
             <Menu className="size-5" />
           </button>
-          <School className="size-5 text-indigo-600" aria-hidden="true" />
-          <span className="text-sm font-extrabold tracking-tight text-slate-900">SI-OBSERVASI 181</span>
+          <img src="/logo.png" alt="Logo" className="h-7 w-auto object-contain" />
+          <span className="text-sm font-extrabold tracking-tight text-slate-900">Website Cermin 181</span>
         </header>
 
         {!hasSupabase && import.meta.env.PROD && (
