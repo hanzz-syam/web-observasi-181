@@ -83,11 +83,14 @@ export default function Login() {
       <div className="flex items-center justify-center px-5 py-10">
         <div className="w-full max-w-sm">
           <div className="mb-8 flex items-center gap-3 lg:hidden">
-            <div className="grid size-10 place-items-center rounded-xl bg-indigo-950 text-emerald-300">
-              <School className="size-5" aria-hidden="true" />
-            </div>
-            <p className="font-extrabold tracking-tight text-slate-900">SI-OBSERVASI 181</p>
-          </div>
+  <img
+    src="/logo.png"
+    alt="Logo"
+    className="h-10 w-auto object-contain"
+  />
+  <p className="font-extrabold tracking-tight text-slate-900">Website Cermin 181</p>
+</div>
+
 
           <h1 className="text-2xl font-extrabold tracking-tight text-slate-900">
             {register ? 'Buat akun' : 'Masuk'}
