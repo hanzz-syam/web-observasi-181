@@ -52,7 +52,7 @@ export default function Sidebar({ items, page, onNavigate, open, onClose, total,
             />
 
             <div>
-              <p className="text-[15px] font-extrabold leading-tight tracking-tight text-white">Website Cermin 181</p>
+              <p className="text-[15px] font-extrabold leading-tight tracking-tight text-white">Cermin 181</p>
               <p className="text-xs text-indigo-300">UPT SDN 181 Gresik</p>
             </div>
           </div>
