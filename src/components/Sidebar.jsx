@@ -1,5 +1,7 @@
 import {
+  BookOpen,
   ChartColumn,
+  ClipboardList,
   Database,
   LayoutDashboard,
   LogOut,
@@ -18,6 +20,7 @@ export function getNavItems({ isKepsek, hasSupabase }) {
       { key: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
       { key: 'rekap', label: 'Observasi Saya', icon: Table2 },
       { key: 'analisis', label: 'Analisis', icon: ChartColumn },
+      ...(hasSupabase ? [{ key: 'metode', label: 'Upload Metode', icon: BookOpen }] : []),
     ]
   }
   return [
@@ -26,6 +29,7 @@ export function getNavItems({ isKepsek, hasSupabase }) {
     { key: 'rekap', label: 'Rekap Data', icon: Table2 },
     { key: 'analisis', label: 'Analisis', icon: ChartColumn },
     ...(hasSupabase ? [{ key: 'pengguna', label: 'Pengguna', icon: UsersRound }] : []),
+    ...(hasSupabase ? [{ key: 'monitoring-metode', label: 'Monitoring Metode', icon: ClipboardList }] : []),
   ]
 }
 

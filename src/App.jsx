@@ -14,8 +14,10 @@ import Analysis from './pages/Analysis'
 import Users from './pages/Users'
 import Login from './pages/Login'
 import Pending from './pages/Pending'
+import MetodePembelajaran from './pages/MetodePembelajaran'
+import MonitoringMetode from './pages/MonitoringMetode'
 
-const ALL_PAGES = ['dashboard', 'input', 'rekap', 'analisis', 'pengguna']
+const ALL_PAGES = ['dashboard', 'input', 'rekap', 'analisis', 'pengguna', 'metode', 'monitoring-metode']
 
 function readHash() {
   const h = window.location.hash.replace('#/', '')
@@ -145,6 +147,8 @@ function Shell() {
               )}
               {page === 'analisis' && <Analysis observations={observations} onNavigate={navigate} onSeed={handleSeed} />}
               {page === 'pengguna' && <Users profiles={profiles} />}
+              {page === 'metode' && !isKepsek && <MetodePembelajaran />}
+              {page === 'monitoring-metode' && isKepsek && <MonitoringMetode />}
             </>
           )}
         </main>
